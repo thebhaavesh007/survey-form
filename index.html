@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="survey-form">
+        <h2>Survey Form</h2>
+        <p style="color: #666">Feel Free To Answer The Questions Below Based On Your Own Experience And Opinion. If You Are Not Convenient In Answering A Particular Question, Please Skip It By Answering "No". Every Answer Would Be Very Appreciated. Thank You For Your Time.</p>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <label for="email">Your Email Address:</label>
+        <input type="email" id="email" placeholder="user@example.com">
+        <label for="phone">Your Phone Number:</label>
+        <input type="tel" id="phone" placeholder="000-000-0000">
+        <label for="location">Where Do You Live?</label>
+        <select id="location">
+            <option value="">Select</option>
+        </select>
+        <label for="age">Age:</label>
+        <select id="age">
+            <option value="">Select</option>
+            <option value="15-20">15-20</option>
+            <option value="20-30">20-30</option>
+            <option value="31-40">31-40</option>
+            <option value="41-50">41-50</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+        </select>
+        <label for="coding-experience">Have You Ever Appeared in any coding contest?</label>
+        <div>
+            <input type="radio" id="yes" name="coding-experience" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="coding-experience" value="no">
+            <label for="no">No</label>
+        </div>
+        <label for="coding-passion">Discuss what drives your passion for coding and outline your aspirations in the field.</label>
+        <textarea id="coding-passion" placeholder="Enter your answer here"></textarea>
+        <label for="challenges">What are some of the challenges you face while coding?</label>
+        <textarea id="challenges" placeholder="Enter your answer here"></textarea>
+        <label for="data-structures">Please list the Data Structures you have a strong understanding of.</label>
+        <textarea id="data-structures" placeholder="Enter your answer here"></textarea>
+        <label for="proficiency">How would you rate your proficiency in coding?</label>
+        <div>
+            <input type="radio" id="beginner" name="proficiency" value="beginner">
+            <label for="beginner">Beginner</label>
+            <input type="radio" id="intermediate" name="proficiency" value="intermediate">
+            <label for="intermediate">Intermediate</label>
+            <input type="radio" id="advanced" name="proficiency" value="advanced">
+            <label for="advanced">Advanced</label>
+        </div>
+        <button type="submit">Submit Form</button>
+    </form>
+</body>
+</html>
