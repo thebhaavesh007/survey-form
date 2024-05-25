@@ -7,85 +7,90 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form id="survey-form">
-        <h2>Survey Form</h2>
-        <p style="font-weight: bold; font-family: 'Times New Roman', Georgia, serif;">Feel Free To Answer The Questions Below Based On Your Own Experience And Opinion. If You Are Not Convenient In Answering A Particular Question, Please Skip It By Answering "No". Every Answer Would Be Very Appreciated. Thank You For Your Time.</p>
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" placeholder="Enter your name">
-        <label for="email">Your Email Address:</label>
-        <input type="email" id="email" placeholder="user@example.com">
-        <label for="phone">Your Phone Number:</label>
-        <input type="tel" id="phone" placeholder="000-000-0000">
-        <label for="location">Where Do You Live?</label>
-            <select id="location">
-            <option value="">Select</option>
-            <option value="Mumbai">Mumbai</option>
-            <option value="Delhi">Delhi</option>
-            <option value="Bangalore">Bangalore</option>
-            <option value="Hyderabad">Hyderabad</option>
-            <option value="Chennai">Chennai</option>
-            <option value="Kolkata">Kolkata</option>
-            <option value="Pune">Pune</option>
-            <option value="Ahmedabad">Ahmedabad</option>
-            <option value="Jaipur">Jaipur</option>
-            <option value="Surat">Surat</option>
-            <option value="Lucknow">Lucknow</option>
-            <option value="Kanpur">Kanpur</option>
-            <option value="Nagpur">Nagpur</option>
-            <option value="Patna">Patna</option>
-            <option value="Indore">Indore</option>
-            <option value="Thane">Thane</option>
-            <option value="Bhopal">Bhopal</option>
-            <option value="Visakhapatnam">Visakhapatnam</option>
-            <option value="Vadodara">Vadodara</option>
-            <option value="Firozabad">Firozabad</option>
-            <!-- Add more cities as needed -->
-        </select>
-        <fieldset><legend>Age:</legend>
-            <div>
-                <input type="radio" id="age_15_20" name="age" value="15-20">
-                <label for="age_15_20">15-20</label>
+    <div class="container">
+        <form class="survey-form">
+            <h1>Survey Form</h1>
+            <p>Feel free to answer the questions below based on your own experience and opinion. If you are not comfortable answering a particular question, please skip it by answering "No". Every answer would be very appreciated. Thank you for your time.</p>
+
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
             </div>
-            <div>
-                <input type="radio" id="age_20_30" name="age" value="20-30">
-                <label for="age_20_30">20-30</label>
+            <div class="form-group">
+                <label for="email">Your Email Address</label>
+                <input type="email" id="email" name="email" placeholder="user@user.com" required>
             </div>
-            <div>
-                <input type="radio" id="age_31_40" name="age" value="31-40">
-                <label for="age_31_40">31-40</label>
+            <div class="form-group">
+                <label for="phone">Your Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="9999999999" required>
             </div>
-            <div>
-                <input type="radio" id="age_41_50" name="age" value="41-50">
-                <label for="age_41_50">41-50</label>
+            <div class="form-group">
+                <label for="location">Where Do You Live?</label>
+                <select id="location">
+                <option value="">Select</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Pune">Pune</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Surat">Surat</option>
+                <option value="Lucknow">Lucknow</option>
+                <option value="Kanpur">Kanpur</option>
+                <option value="Nagpur">Nagpur</option>
+                <option value="Patna">Patna</option>
+                <option value="Indore">Indore</option>
+                <option value="Thane">Thane</option>
+                <option value="Bhopal">Bhopal</option>
+                <option value="Visakhapatnam">Visakhapatnam</option>
+                <option value="Vadodara">Vadodara</option>
+                <option value="Firozabad">Firozabad</option>
+                <!-- Add more cities as needed -->
+            </select>
             </div>
-            <div>
-                <input type="radio" id="age_prefer_not_to_say" name="age" value="prefer-not-to-say">
-                <label for="age_prefer_not_to_say">Prefer not to say</label>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Age</legend>
+                    <label><input type="radio" name="age" value="15-20"> 15-20</label>
+                    <label><input type="radio" name="age" value="20-30"> 20-30</label>
+                    <label><input type="radio" name="age" value="31-40"> 31-40</label>
+                    <label><input type="radio" name="age" value="41-50"> 41-50</label>
+                    <label><input type="radio" name="age" value="prefer-not-to-say"> Prefer not to say</label>
+                </fieldset>
             </div>
-        </fieldset>        
-        <label for="proficiency">How would you rate your proficiency in coding?</label>
-        <div>
-            <input type="radio" id="beginner" name="proficiency" value="beginner">
-            <label for="beginner">Beginner</label>
-            <input type="radio" id="intermediate" name="proficiency" value="intermediate">
-            <label for="intermediate">Intermediate</label>
-            <input type="radio" id="advanced" name="proficiency" value="advanced">
-            <label for="advanced">Advanced</label>
-        </div>
-    <label for="coding-experience">Have You Ever Appeared in any coding contest?</label>
-        <div>
-            <input type="radio" id="yes" name="coding-experience" value="yes">
-            <label for="yes">Yes</label>
-            <input type="radio" id="no" name="coding-experience" value="no">
-            <label for="no">No</label>
-        </div>
-        <label for="coding-passion">Discuss what drives your passion for coding and outline your aspirations in the field.</label>
-        <textarea id="coding-passion" placeholder="Enter your answer here"></textarea>
-        <label for="challenges">What are some of the challenges you face while coding?</label>
-        <textarea id="challenges" placeholder="Enter your answer here"></textarea>
-        <label for="data-structures">Please list the Data Structures you have a strong understanding of.</label>
-        <textarea id="data-structures" placeholder="Enter your answer here"></textarea>
-                <button type="submit">Submit Form</button>
-    </form>
- </body>
-</html>        
+            <div class="form-group">
+                <fieldset>
+                    <legend>How would you rate your proficiency in coding</legend>
+                    <label><input type="radio" name="proficiency" value="beginner"> Beginner</label>
+                    <label><input type="radio" name="proficiency" value="intermediate" checked> Intermediate</label>
+                    <label><input type="radio" name="proficiency" value="advanced"> Advanced</label>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Have You Ever Appeared in any coding contest?</legend>
+                    <label><input type="radio" name="contest" value="yes"> Yes</label>
+                    <label><input type="radio" name="contest" value="no" checked> No</label>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <label for="passion">Discuss what drives your passion for coding and outline your aspirations in the field.</label>
+                <textarea id="passion" name="passion" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="challenges">What are some of the challenges you face while coding?</label>
+                <textarea id="challenges" name="challenges" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="data-structures">Please list the Data Structures you have a strong understanding of.</label>
+                <textarea id="data-structures" name="data-structures" rows="4"></textarea>
+            </div>
+            <button type="submit">Submit Form</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
