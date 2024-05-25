@@ -1,8 +1,8 @@
 body {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(59, 173, 234);
+    background: linear-gradient(to right, #8bc34a, #cddc39);
 }
 
 form {
@@ -22,7 +22,7 @@ h2 {
 p {
     text-align: justify;
     margin-bottom: 20px;
-    color: #666;
+    color: #000000;
 }
 
 label {
@@ -57,7 +57,7 @@ button {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: rgb(82, 114, 230);
+    background-color: #4caf50;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -66,5 +66,5 @@ button {
 }
 
 button:hover {
-    background-color: rgba(9, 22, 118, 0.514);
+    background-color: #45a049;
 }
